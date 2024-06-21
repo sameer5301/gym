@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader</title>
+    <style>
+        /* Center the loader */
+        #loader {
+            position: absolute;
+            left: 20%;
+            mix-blend-mode: color-burn;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        
+
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        #myDiv {
+            display: none;
+            text-align: center;}
+    </style>
+</head>
+
+<body onload="myFunction()" style="margin: 0;">
+
+    <div id="loader"> <img src="./Photos/output-onlinegiftools.gif" alt=""></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <h2>Tada!</h2>
+        <p>Some text in my newly loaded page..</p>
+    </div>
+
+
+    <!--
+    <div class="container-fluid">
+        <div id="loader">
+            <div class="loaderanimate">
+                <div class="container">
+                    <div class="gif"><img src="./Photos/a0c1b7ea7220d3f910ccd5bb82013673.gif" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    $(document).ready(function () {
+            $("loaderanimate").dealy(900).fadeOut.("slow", function () {
+                $("loader").fadeOut("slow");
+            });
+        });
+    -->
+
+    <script>
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,733 @@
+body {
+    overflow-x: hidden;
+    background: #000;
+
+
+}
+
+p {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* loader */
+/* Center the loader */
+#loaderr {
+    position: absolute;
+    left: 20%;
+    z-index: 9999999;
+    mix-blend-mode: color-burn;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+
+
+/* Add animation to "page content" */
+#loader {
+    
+}
+
+.no-js #loaderanimate,
+.oldie #loaderanimate {
+    display: none;
+}
+
+#loaderanimate {
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    /*width: 60px;
+height: 60px;*/
+    margin-left: -90px;
+    margin-top: -150px;
+    padding: 0;
+}
+#loderanimate
+#myDivv {
+    display: none;
+    text-align: center;
+}
+
+
+
+/* nav bar */
+.logo img {
+    height: 75px;
+    width: 140px;
+}
+
+.navi {
+    color: white;
+    position: absolute;
+    right: 37%;
+    font-size: 22px;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 9px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+
+/* hero Page */
+.hero img {
+    width: 100%;
+}
+
+.h_1 {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 50px #5e4107, #e59900, #77530a;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff;
+    }
+}
+
+
+
+
+/* marquee*/
+marquee {
+    width: 100%;
+    font-size: 190px;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+/* bact to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #5e4107, #e59900, #77530a;
+}
+
+
+/*video section*/
+
+.Fire p {
+    font-size: 60px;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.vdo video {
+    width: 63em;
+}
+
+/*about section*/
+
+.abt h3 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    top: 15%;
+    right: 10%;
+}
+
+.abt img {
+    height: 50vh;
+    width: 80vh;
+    position: relative;
+    left: 19%;
+}
+
+.abt p {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.abt h6 {
+    font-size: 20px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+    position: relative;
+    top: 23%;
+}
+
+
+/* service section*/
+
+
+
+
+/* parallax section*/
+.llax {
+
+    position: relative;
+    opacity: 01;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.llax {
+    background-image: url("./Photos/img-35-copyright-890x664.jpg");
+    min-height: 600px;
+}
+
+
+.llax h1 {
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    font-size: 70px;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+
+
+
+
+/*package section */
+
+.card {
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 14rem;
+    padding: 1.5em 5em;
+    display: grid;
+
+    align-items: start;
+
+    color: #eceff1;
+    background-color: #2b2b2b;
+    border: 1px solid #eceff133;
+    border-radius: 15px;
+}
+
+.card__bullets {
+    line-height: 1.4;
+}
+
+.card__heading {
+    font-size: 1.55em;
+    font-weight: 600;
+}
+
+.card__price {
+    font-size: 2.15em;
+    font-weight: 700;
+}
+
+
+
+.cta {
+    display: block;
+    align-self: end;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    outline: 1px solid white;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card:hover {
+    --lightness: 80%;
+    background: #ffffff80;
+    color: #000;
+    outline: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(#77530a, #ffd277, #77530a);
+    transition: all ease-in-out 0.3s;
+}
+
+.card:hover>.cta {
+    outline: none;
+    background-color: #0d0d0d;
+}
+
+
+
+/* trainer section*/
+.trainers img {
+    height: 25vh;
+    cursor: pointer;
+}
+
+
+
+.card-client {
+    background: #000000;
+    width: 15rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    border: 4px solid #b3b302;
+    box-shadow: #77530a, #ffd277, #77530a;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.card-client:hover {
+    transform: translateY(-10px);
+}
+
+.user-picture {
+    overflow: hidden;
+    object-fit: cover;
+    width: 11rem;
+    height: 10rem;
+    border: 4px solid #b1ac04;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.user-picture svg {
+    width: 2.5rem;
+    fill: currentColor;
+}
+
+.name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #7cdacc;
+}
+
+.social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+}
+
+.trainers i {
+    cursor: pointer;
+}
+
+
+/*review section*/
+.rev h3 {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+/* other information*/
+.other i {
+    font-size: 90px;
+    cursor: pointer;
+
+}
+
+.other h4 {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.other h6 {
+    font-size: 20px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+/*contact section*/
+.contact input {
+    width: 39vh;
+    padding: 10px;
+    margin: 15px;
+    background-color: black;
+    color: #ffff;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.info input {
+    width: 82.5vh;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact h2 {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* footer section*/
+footer {
+
+    background-color: black;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.foot img {
+    height: 115px;
+    width: 195px;
+}
+
+footer input {
+    width: 40vh;
+    padding: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+footer h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer h5:hover {
+    background-color: #77530a, #ffd277, #77530a;
+
+}
+
+footer input {
+    background-color: black;
+    color: #ffff;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f1f1f1, #e5e5e5, #f1f1f1, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    position: absolute;
+    left: 68%;
+}
+
+.Btn::before {
+    position: absolute;
+    content: "Send";
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: black;
+    background-size: 200%;
+}
+
+.Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:active {
+    transform: scale(0.95);
+}
+
+
+
+.Btnn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f1f1f1, #e5e5e5, #f1f1f1, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    position: relative;
+    left: 95%;
+    top: -7.8%;
+
+}
+
+.Btnn::before {
+    position: absolute;
+    content: "Send";
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: black;
+    background-size: 200%;
+}
+
+.Btnn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btnn:active {
+    transform: scale(0.95);
+}
+
+
+
+/* resposive */
+
+@media screen and (max-width:768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 90px;
+
+    }
+
+    .navi {
+        font-size: 10px;
+        position: absolute;
+        top: 10%;
+        background: 90vh;
+    }
+
+    .hero img {
+
+        width: 100%;
+        height: 30vh;
+    }
+
+    .h_1 {
+        font-size: 37px;
+        position: absolute;
+        top: 14%;
+        left: 45%;
+    }
+
+    marquee {
+        font-size: 50px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Fire p {
+        font-size: 30px;
+    }
+
+    .Fire video {
+        width: 100%;
+    }
+
+    .llax {
+        min-height: 50vh;
+    }
+
+    .llax h1 {
+        font: 50px;
+    }
+
+    .abt img {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        left: 0;
+    }
+
+    .abt p {
+
+        width: 100%;
+        position: relative;
+        left: 0%;
+    }
+
+    .abt p {
+        position: relative;
+        left: 10%;
+    }
+
+    .contact input {
+        width: 40vh;
+    }
+
+    .Btn {
+        position: absolute;
+        left: 30%;
+    }
+
+    .Btnn {
+        position: relative;
+        left: 37%;
+        top: 5%;
+    }
+
+    .llax h1 {
+        font-size: 60px;
+        position: absolute;
+        left: 1%;
+        top: 25%;
+    }
+
+    .foot img {
+        height: 80px;
+        width: 130px;
+    }
+
+    footer input {
+        width: 20vh;
+    }
+
+    .card-client {
+        margin-left: 70px;
+        margin-bottom: 25px;
+    }
+}
